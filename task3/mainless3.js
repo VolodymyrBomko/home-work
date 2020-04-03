@@ -1287,7 +1287,7 @@ for (const user of users) {
 //- За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам (div>div*4)
 //- За допомоги циклу проітерувати  масив users, записати кожного юзера в сівй блок за допомоги document.createElement, розділивши всі властивості по своїм блокам , блок з адресою зробити окремим блоком, з блоками для кожної властивості
 
-let users = [{
+/*let users = [{
     name: 'vasya',
     age: 31,
     status: false,
@@ -1342,7 +1342,7 @@ let users = [{
     age: 31,
     status: true,
     address: {city: 'Cairo', country: 'Egypt', street: 'Seashore', houseNumber: 45}
-}];
+}];*/
 
 
 /*let newAddress=[];
@@ -1379,7 +1379,7 @@ console.log(newAddress);*/
 }*/
 
 
-document.getElementById('coteiner').style.display='flex';
+/*document.getElementById('coteiner').style.display='flex';
 let divname=document.createElement("div");
 divname.id='name';
 let divage=document.createElement("div");
@@ -1399,5 +1399,98 @@ for (let i = 0; i < users.length; i++) {
     document.getElementById('status').innerText+=users[i].status+'\n';
     document.getElementById('address').innerText+=users[i].address.country+', '+users[i].address.city+', '+users[i].address.street+', '+users[i].address.houseNumber+'\n';
 
-}
+}*/
 
+//- Дано 2 масиви з рівною кількістю об'єктів.
+//Масиви:
+   //let usersWithId = [{id: 1, name: 'vasya', age: 31, status: false}, {id: 2, name: 'petya', age: 30, status: true}, {id: 3, name: 'kolya', age: 29, status: true}, {id: 4, name: 'olya', age: 28, status: false},];
+//let citiesWithId = [{user_id: 3, country: 'USA', city: 'Portland'}, {user_id: 1, country: 'Ukraine', city: 'Ternopil'}, {user_id: 2, country: 'Poland', city: 'Krakow'}, {user_id: 4, country: 'USA', city: 'Miami'},];
+//З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
+    //Записати цей об'єкт в новий масив
+//Частковий приклад реультату:
+    //let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
+
+// for (const user of usersWithId) {
+//     for (const city of citiesWithId) {
+//         if (user.id===city.user_id){
+//                 user.address=city;
+//         }
+//
+//     }
+// }
+// console.log(usersWithId);
+
+
+//- створити розмітці блок з id, class та текстом в середені. Зчитати окремо цей текст з селекторів по id , class та тегу
+//- змінити цей текст використовуючи селектори id, class,  tag
+//- змінити висоту та ширину блоку використовуючи селектори id, class,  tag
+
+// let elementById=document.getElementById('content');
+// let innerText=elementById.innerText;
+// console.log(innerText);
+
+// let elementsByClaass=document.getElementsByClassName('rules');
+// for (const element of elementsByClaass) {
+//     element.innerText='heloo';
+//
+// }
+
+// let elementsByTagName=document.getElementsByTagName('h2');
+// //console.log(elementsByTagName);
+// for (const element of elementsByTagName) {
+//     element.innerText='hello';
+//     element.style.background='red';
+//     element.style.width='100px';
+//     element.style.height='100px';
+//
+// }
+
+//- за допомоги document.createElement та appendChild створити таблицю на 1 рядок з трьома ячейками всередені
+// let table=document.createElement('table');
+// let tr=document.createElement('tr');
+// let td=document.createElement('td');
+// let td2=document.createElement('td');
+// let td3=document.createElement('td');
+//
+// tr.appendChild(td);
+// tr.appendChild(td2);
+// tr.appendChild(td3);
+//
+// table.appendChild(tr);
+//
+// document.body.appendChild(table);
+
+//- за допомоги document.createElement, appendChild та циклу створити таблицю на 10 рядків з трьома ячейками всередені
+// let x=prompt('number');
+// let y=prompt('number');
+//
+// let table=document.createElement('table');
+// for (let i = 0; i < x; i++) {
+//    let tr=document.createElement('tr');
+//         for (let j = 0; j < y; j++) {
+//             let td=document.createElement('td');
+//             tr.appendChild(td);
+//         }
+//     table.appendChild(tr);
+// }
+//
+//
+//
+// document.body.appendChild(table);
+
+//- за допомоги document.createElement, appendChild та 2х циклів створити таблицю на 10 рядків з 5 ячейками всередені
+//- за допомоги document.createElement, appendChild та 2х циклів створити таблицю на n рядків з m ячейками всередені. n та m отримати з prompt
+
+
+//--Завантажити з мережі будь-який шаблон сайту. Підключити до нього свій скріпт-файл. У файлі прописати наступні доступи та дії
+//- знайти всі елементі, які мають id
+//- знайти всі параграфи ,та змінити текст на hello oktenweb!
+  //  - знайти всі div та змінити ім колір на червоний
+
+let elementsByTag=document.getElementsByTagName('*');
+//console.log(elementsByTag);
+for (const tag of elementsByTag) {
+    if (tag.getAttribute('id')){
+        console.log(tag);
+    }
+}
