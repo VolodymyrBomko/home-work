@@ -1408,7 +1408,7 @@ for (let i = 0; i < users.length; i++) {
 //З'єднати в один об'єкт користувача та місто з відповідними "id" та "user_id" .
     //Записати цей об'єкт в новий масив
 //Частковий приклад реультату:
-    //let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}....]
+    //let usersWithCities = [{id: 1, name: 'vasya', age: 31, status: false, address: {user_id: 1, country: 'Ukraine', city: 'Ternopil'}}
 
 // for (const user of usersWithId) {
 //     for (const city of citiesWithId) {
